@@ -1,7 +1,7 @@
 {
-  "name": "server-side-rendering-comparison",
-  "version": "0.1.0",
-  "description": "Server-side rendering comparison",
+  "name": "ssr-react-context-comparison",
+  "version": "1.0.0",
+  "description": "Server-side rendering react context comparison",
   "main": "app.js",
   "scripts": {
     "start": "NODE_ENV=production nodemon app.js",
@@ -15,37 +15,23 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/taobaofed/server-side-rendering-comparison"
-  },
-  "publishConfig": {
-    "registry": "http://registry.npm.alibaba-inc.com"
+    "url": "https://github.com/taobaofed/ssr-react-context-comparison"
   },
   "author": {
-    "name": "imsobear"
+    "name": "hartzis"
   },
   "dependencies": {
-    "inferno": "latest",
-    "inferno-component": "latest",
-    "inferno-create-element": "latest",
-    "inferno-server": "latest",
     "koa": "^1.2.4",
     "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
-    "marko": "latest",
-    "preact": "latest",
-    "preact-render-to-string": "latest",
-    "rapscallion": "^2.1.5",
-    "rax": "^0.4.16",
-    "rax-server-renderer": "^0.4.16",
     "react": "latest",
     "react-dom": "latest",
-    "vue": "latest",
-    "vue-server-renderer": "latest",
     "xtemplate": "^4.6.0",
     "xtpl": "^3.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^6.2.8",
     "babel-plugin-inferno": "^3.2.0",
     "babel-plugin-syntax-jsx": "^6.18.0",
