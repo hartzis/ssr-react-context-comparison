@@ -4,9 +4,9 @@ const ReactDOMServer = require('react-dom/server');
 
 module.exports = {
 
-    home: function* () {
+    home: (type) => function* () {
 
-        const ReactApp = require('../assets/build/server.react.bundle').default;
+        const ReactApp = require(`../assets/build/server.react.${type}.bundle`).default;
 
         const pageConfig = {
             listData: require('../mock/list'),
@@ -14,7 +14,7 @@ module.exports = {
         };
 
         yield this.render('page', {
-            type: 'react',
+            type: `react.${type}`,
             content: ReactDOMServer.renderToString(
                         React.createElement(ReactApp, pageConfig)
                     ),

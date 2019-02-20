@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styles from './styles';
+import { ContextA } from '../context/index.react.legacy';
 
 export default class Banner extends React.Component {
 
@@ -23,9 +24,14 @@ export default class Banner extends React.Component {
         {
           data.map((item, idx) => {
             return (
-              <div style={styles.item} onClick={this.onBannerClick.bind(this, item)}>
-                <img src={item.img} style={styles.itemImg} />
-              </div>
+              <ContextA.Consumer>
+                {value => (
+                  <div style={styles.item} onClick={this.onBannerClick.bind(this, item)}>
+                    <img src={item.img} style={styles.itemImg} />
+                    <span>{value.type}</span>
+                  </div>
+                )}
+              </ContextA.Consumer>
             );
           })
         }

@@ -7,6 +7,6 @@ module.exports = Array
       title: 'Product title ' + i,
       img: 'https://img.alicdn.com/tps/TB13keMLXXXXXbmXVXXXXXXXXXX-900-500.jpg',
       href: 'https://github.com',
-      price: 20
+      price: 20 + i
     };
   });

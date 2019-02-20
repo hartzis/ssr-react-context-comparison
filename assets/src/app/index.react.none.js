@@ -1,7 +1,7 @@
 
 import React from 'react';
-import List from './list/index.react';
-import Banner from './banner/index.react';
+import { ListA, ListB } from './list/index.react.none';
+import Banner from './banner/index.react.none';
 
 export default class App extends React.Component {
   state = {};
@@ -22,7 +22,8 @@ export default class App extends React.Component {
     return (
       <div onClick={this.state.onClick}>
         <Banner cacheKey={"banner"} data={props.bannerData} />
-        <List cacheKey={"list"} data={props.listData} />
+        <ListA cacheKey={"lista"} data={props.listData} />
+        <ListB cacheKey={"listb"} data={props.listData} />
       </div>
     );
 

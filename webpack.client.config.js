@@ -5,7 +5,10 @@ var webpack = require('webpack');
 module.exports = {
 
   entry: {
-    'client.react': './assets/src/client.react.js',
+    'client.react.legacy': './assets/src/client.react.legacy.js',
+    'client.react.mix': './assets/src/client.react.mix.js',
+    'client.react.new': './assets/src/client.react.new.js',
+    'client.react.none': './assets/src/client.react.none.js',
   },
   output: {
     filename: './assets/build/[name].bundle.js'

@@ -14,7 +14,10 @@ const app = require('xtpl/lib/koa')(require('koa')(), {
 });
 
 
-router.get('/react', reactController.home);
+router.get('/react/legacy', reactController.home('legacy'));
+router.get('/react/mix', reactController.home('mix'));
+router.get('/react/new', reactController.home('new'));
+router.get('/react/none', reactController.home('none'));
 
 app.use(serve('./assets/build'));
 app.use(router.routes());
