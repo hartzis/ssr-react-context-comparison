@@ -1,5 +1,11 @@
 # Server-side Rendering React Context Comparison
 
+## Tests
+
+- Legacy, New, Mix, and no react contexts
+
+Built starting from the great work here: https://github.com/raxjs/server-side-rendering-comparison
+
 ## Benchmark info
 
 - with `NODE_ENV=production`. `renderToString` both require from `lib` not `dist`
